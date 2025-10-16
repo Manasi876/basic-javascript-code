@@ -38,17 +38,29 @@ for (let i = 0; i < a.length; i++) {
   }
 }
 //remove this name which have more than 3 vowel parasent
-let hi=["manasi","ritu","raju","bitu","priyadarshini"];
-for(i=0;i<hi.length;i++){
-    function countvowel(str){
-    return str.match(/[aeiou]/gi)?.length||0;
-}
-console.log(countvowel(hi));
-if(vowel>3){
-    console.log(hi.pop);
+let hi = ["manasi", "ritu", "raju", "bitu", "priyadarshini"];
+
+function countVowel(str) {
+  return (str.match(/[aeiou]/gi) || []).length;
 }
 
+for (let i = 0; i < hi.length; i++) {
+  const name = hi[i];
+  const vowelCount = countVowel(name);
+  console.log(name, "has", vowelCount, "vowels");
+  if (vowelCount > 3) {
+    hi.splice(i, 1);
+    i--; 
+  }
 }
+
+console.log("Resulting array:", hi);
+
+//linear search
+//arr=[15,25,26,45,66,]
+
+
+
 
 
 
