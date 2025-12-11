@@ -111,4 +111,102 @@ nav a:hover {
 .btn:hover {
     transform:scale(1.05);
 }
+.floating-icon {
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
 
+.floating-icon i {
+    font-size: 36px;
+    color: white;
+}
+
+.icon-1 {
+    top: 20%;
+    left: 10%;
+}
+
+.icon-2 {
+    top: 60%;
+    right: 15%;
+}
+
+.icon-3 {
+    bottom: 15%;
+   left: 20%;
+}
+.hero-1{
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fc;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hero-1 h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:stretch ;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+  .card{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(239, 240, 237, 0.906);
+    position:relative;
+} 
+.card:hover{
+    transform: translateY(-10px);
+}
+.icon-box{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-items:center;
+}
+.hero-1 p{
+    line-height: 1.4;
+}
+
+.stat{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background: linear-gradient(90deg,#6a11cb,#2575fc);
+    color: #f8f9fc;
+    text-align: center;
+    padding: 60px 30px;
+}
+.stat-box i{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+.stat-box h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.stat-box p{
+    font-size: 16px;
+
+}
+.footer-section ul li a:hover{
+    color: #2575fc;
+}
